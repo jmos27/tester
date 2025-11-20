@@ -1,0 +1,48 @@
+    1  git clone https://github.com/jmos27/tester.git
+    2  make subway
+    3  git remote -v
+    4  mikes
+    5  make mikes
+    6  make cheba
+    7  bin/sb testcases/catdel.trace
+    8  bin/sb -i testcases/catdel.trace
+    9  make snarfs
+   10  make potbelly
+   11  gdb bin/sb
+   12  make snarfs
+   13  make subway
+   14  bin/sb -i testcases/catdel.trace
+   15  ref/sb -i testcases/catdel.trace
+   16  ref_sb -i testcases/catdel.trace
+   17  chmod +x ./ref_sb
+   18  ref_sb -i testcases/catdel.trace
+   19  make mikes
+   20  make cheba
+   21  make snarfs
+   22  history > shell_logs.txt
+   23  git add .
+   24  git commit -m "done"
+   25  git push
+   26  git status
+   27  cd ..
+   28  rm -rf tester
+   29  git clone https://github.com/jmos27/tester.git
+   30  history
+   31  make 
+   32  make check
+   33  make comp
+   34  chmod +x ./ref.out
+   35  make comp
+   36  make debug
+   37  gdb bin/a.out
+   38  make clean
+   39  make debug
+   40  gdb bin/a.out
+   41  bin/a.out -t testcases/short2.rep
+   42  make clean
+   43  make 
+   44  bin/a.out -t testcases/short2.rep
+   45  ref.out -t testcases/short2.rep
+   46  make comp
+   47  make clean
+   48  history > shell_logs.txt
